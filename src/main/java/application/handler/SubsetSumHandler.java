@@ -13,6 +13,9 @@ import io.vertx.ext.web.RoutingContext;
 
 import java.util.List;
 
+/**
+ * A custom Vertx Handler used to handle all SubsetSum requests coming in to the application's HTTP Server
+ */
 public class SubsetSumHandler implements Handler<RoutingContext> {
     Logger log = LoggerFactory.getLogger("SubsetSumHandler");
 

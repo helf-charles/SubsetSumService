@@ -140,7 +140,8 @@ public class SubsetSumCalculator {
         }
 
         //We want to go through this entire process for every possible subset size within this list
-        for (subsetSize = 0; subsetSize < listSize; subsetSize++) {
+        for (int i = 0; i < listSize; i++) {
+            subsetSize = i + 1;
 
             //We want to establish the correct starting Positions for the elements our subset intends to look at
             for (int j = 0; j < subsetSize; j++) {
