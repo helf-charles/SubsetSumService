@@ -12,3 +12,15 @@ Due to the algorithm used, this application has certain limitations.  Given a li
 negative integers, the application can't handle lists for which X * Y > 144.  Lists that surpass this limit run the risk of
 resulting in HTTP Request Timeouts.  For reference, a list I generated where X = 12 and Y = 10 generated a response JSON of
 about 1.9MB, consisting of over 75,000 lines of text.
+
+# How To Use This Application
+
+At present, the front-end GUI is nonfunctional.  The hope is to eventually provide a simple interface through which casual
+users could interact with this service.  For the time being, though, it works exclusively through HTTP calls.
+
+First, this application must be installed locally and set running via IDE of your choice.
+
+Once this is handled, the local machine will then be able to accept HTTP calls.  Using any kind of HTTP request tool (such
+as Postman), send a POST request to "localhost:9001/subsetSum".  An example JSON body is given in the project's root
+directory.  Simply sending a properly formatted POST request will result in a response JSON consisting of all the possible
+summations that meet the requirements set.
