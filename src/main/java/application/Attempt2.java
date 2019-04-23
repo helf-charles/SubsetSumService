@@ -5,14 +5,11 @@ import io.vertx.core.logging.Logger;
 import io.vertx.core.logging.LoggerFactory;
 
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashMap;
 import java.util.List;
 import java.util.stream.Collectors;
 
 public class Attempt2 {
-    static Logger log = LoggerFactory.getLogger("Attempt2");
-
+    
     public static List<List<Integer>> calculate(List<Integer> startList, int target) {
 
         List<SubsetSum> summations = getSummations(startList);

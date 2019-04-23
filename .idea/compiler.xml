@@ -9,6 +9,8 @@
         <module name="SubsetSumService" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="8" />
+    <bytecodeTargetLevel>
+      <module name="SubsetSumService" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
